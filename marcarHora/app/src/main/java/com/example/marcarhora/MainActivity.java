@@ -38,15 +38,16 @@ public class MainActivity extends AppCompatActivity {
     private int indice;
 
 
-    ImageButton btconsulta;
-    RadioGroup rgcorte, rgquimico, rgdia, rghora;
-    Double valor;
-    Button btreseva;
-    SQLiteDatabase db;
+    private ImageButton btconsulta;
+    private RadioGroup rgcorte, rgquimico, rgdia, rghora, rgbarba, rgsombrancelha, rglimpesa;
+    private Double valor;
+    private Button btreseva;
+    private SQLiteDatabase db;
     RadioButton rgcorte1, rgcorte2, rgcorte3, rgcorte4;
     RadioButton rdbarba, rdsombrancelha, rdlimpesa, rdprogreciva;
     RadioButton rdtintura, rdgracha, rdplatinado;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         rdgracha = (RadioButton) findViewById(R.id.rdgracha);
         rdbarba = (RadioButton) findViewById(R.id.rdbarba);
         btconsulta = (ImageButton) findViewById(R.id.btconsulta);
-        valor = (double) Double.valueOf(0);
+
 
         rgcorte1 = (RadioButton) findViewById(R.id.rdcorte1);
         rgcorte2 = (RadioButton) findViewById(R.id.rdcorte2);
@@ -75,7 +76,9 @@ public class MainActivity extends AppCompatActivity {
         rgquimico = (RadioGroup) findViewById(R.id.rgquimicos);
         rghora = (RadioGroup) findViewById(R.id.rghora);
         rgdia = (RadioGroup) findViewById(R.id.data_da_reserva);
-
+        rgbarba = (RadioGroup) findViewById(R.id.rgbarba);
+        rgsombrancelha = (RadioGroup) findViewById(R.id.rgsombrancelha);
+        rglimpesa = (RadioGroup) findViewById(R.id.rglimpesa);
 
         try {
             db = openOrCreateDatabase("banco_Reserva2",
@@ -91,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Abrirbanco();
 
-
                 int selectedId = rgcorte.getCheckedRadioButtonId();
                 RadioButton selectedRadioButton = findViewById(selectedId);
                 String corte = selectedRadioButton.getText().toString();
@@ -100,17 +102,26 @@ public class MainActivity extends AppCompatActivity {
                 RadioButton selecionadoRadioButton = findViewById(selecioneId);
                 String hora = selecionadoRadioButton.getText().toString();
 
-                int selectedId1 = rgdia.getCheckedRadioButtonId();
-                RadioButton selectedRadioButton1 = findViewById(selectedId1);
+                int selectedIde = rgdia.getCheckedRadioButtonId();
+                RadioButton selectedRadioButton1 = findViewById(selectedIde);
                 String dia = selectedRadioButton1.getText().toString();
 
-                int selectedId2 = rgquimico.getCheckedRadioButtonId();
-                RadioButton selectedRadioButton2 = findViewById(selectedId1);
+                int selectedIdo = rgquimico.getCheckedRadioButtonId();
+                RadioButton selectedRadioButton2 = findViewById(selectedIdo);
                 String quimico = selectedRadioButton2.getText().toString();
 
-                String barba = rdbarba.getText().toString();
-                String sombrancelha = rdsombrancelha.getText().toString();
-                String limpesa = rdlimpesa.getText().toString();
+                int selectedIda = rgbarba.getCheckedRadioButtonId();
+                RadioButton selectedRadioButton3 = findViewById(selectedIda);
+                String barba = selectedRadioButton3.getText().toString();
+
+                int selectedIdi = rgsombrancelha.getCheckedRadioButtonId();
+                RadioButton selectedRadioButton4 = findViewById(selectedIdi);
+                String sombrancelha = selectedRadioButton4.getText().toString();
+
+                int selectedIdu = rglimpesa.getCheckedRadioButtonId();
+                RadioButton selectedRadioButton5 = findViewById(selectedIdu);
+                String limpesa = selectedRadioButton5.getText().toString();
+
 
                 try {
                     db.execSQL("insert into usuarios(corte, quimico, barba, sombrancelha, limpesa, dia, hora) values('" + corte + "','" + quimico + "','" + barba + "','" + sombrancelha + "','" + limpesa + "','" + dia + "','" + hora + "')");

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MarcarHora"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityEditar"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDeletar"
+            android:exported="false" />
+        <activity
             android:name=".ActivityConsultar"
             android:exported="false" />
         <activity

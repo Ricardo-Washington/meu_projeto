@@ -35,6 +35,7 @@ public class ActivityConsultar extends AppCompatActivity {
     int indice;
     Cursor c;
 
+    Button btdelet, btedit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,10 @@ public class ActivityConsultar extends AppCompatActivity {
         txtdia = (TextView) findViewById(R.id.txtdia);
         txthora = (TextView) findViewById(R.id.txthora);
         txtstatus_registro = (TextView) findViewById(R.id.txtstatus_registro);
+
+        btdelet = (Button) findViewById(R.id.btdelet);
+        btedit = (Button) findViewById(R.id.bteditar);
+
 
         txtcorte.setText("");
         txtbarba.setText("");
@@ -173,9 +178,23 @@ public class ActivityConsultar extends AppCompatActivity {
         }catch (Exception e){
             MostraMensagem("Erro:" + e.toString());
         }
+        btdelet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent excluirDados = new Intent(ActivityConsultar.this, ActivityDeletar.class);
+                ActivityConsultar.this.startActivities(new Intent[]{excluirDados});
+            }
+        });
+        btedit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent editarDados = new Intent(ActivityConsultar.this, ActivityEditar.class);
+                ActivityConsultar.this.startActivities(new Intent[]{editarDados});
+            }
+        });
+
 
     }
-
     public void  MostraMensagem(String str)
     {
         AlertDialog.Builder dialogo = new AlertDialog.Builder(ActivityConsultar.this);

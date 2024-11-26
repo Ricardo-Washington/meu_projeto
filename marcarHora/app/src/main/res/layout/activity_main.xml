@@ -293,6 +293,10 @@
                 android:layout_marginTop="4dp"
                 android:text="@string/social" />
         </RadioGroup>
+        <RadioGroup android:id="@+id/rgbarba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp">
         <RadioButton
             android:id="@+id/rdbarba"
             style="@style/button_raius"
@@ -303,6 +307,12 @@
             android:layout_marginStart="200dp"
             android:layout_marginTop="7dp"
             android:text="@string/barba" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/rgsombrancelha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp">
         <RadioButton
             android:id="@+id/rdsombrancelha"
             style="@style/button_raius"
@@ -313,6 +323,12 @@
             android:layout_marginStart="199dp"
             android:layout_marginTop="3dp"
             android:text="@string/sombrancelha" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/rglimpesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp">
         <RadioButton
             android:id="@+id/rdlimpesa"
             style="@style/button_raius"
@@ -323,6 +339,7 @@
             android:layout_marginStart="199dp"
             android:layout_marginTop="4dp"
             android:text="@string/limpesa" />
+        </RadioGroup>
         <RadioGroup
             android:id="@+id/rgquimicos"
             android:layout_width="match_parent"
