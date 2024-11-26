@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text_r">
+        <item name="fontFamily">@font/afacad</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/cinza_text</item>
+    </style>
+    <style name="Text_raius">
+        <item name="fontFamily">@font/agbalumo</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">#A3000000</item>
+    </style>
+    <style name="button_raius">
+        <item name="fontFamily">@font/afacad</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#D03E3C3C</item>
+    </style>
+    <style name="textcinza">
+        <item name="fontFamily">@font/afacad</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textColor">@color/cinza_text</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="hora">
+        <item name="fontFamily">@font/amita</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:color">@color/cinza_text</item>
+
+    </style>
+
+</resources>
