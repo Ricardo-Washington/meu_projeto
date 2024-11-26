@@ -192,8 +192,6 @@ public class ActivityConsultar extends AppCompatActivity {
                 ActivityConsultar.this.startActivities(new Intent[]{editarDados});
             }
         });
-
-
     }
     public void  MostraMensagem(String str)
     {

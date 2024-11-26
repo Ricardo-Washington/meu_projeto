@@ -125,7 +125,7 @@
         tools:text="@string/quimicos" />
 
     <EditText
-        android:id="@+id/txttelefone"
+        android:id="@+id/txtquimico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -146,7 +146,7 @@
         tools:text="Data" />
 
     <EditText
-        android:id="@+id/txtdata"
+        android:id="@+id/txtdia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
