@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:text="@string/nome"
-            android:textColor="#000000"
+            android:textColor="@color/text_escuro"
             android:textSize="18sp" />
 
         <EditText
@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:text="@string/telefone"
-            android:textColor="#000000"
+            android:textColor="@color/text_escuro"
             android:textSize="18sp" />
 
         <EditText
@@ -110,7 +110,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:text="@string/email"
-            android:textColor="#000000"
+            android:textColor="@color/text_escuro"
             android:textSize="18sp" />
 
         <EditText

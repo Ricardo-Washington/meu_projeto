@@ -51,8 +51,10 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/afacad"
             android:text="Não sabe por onde começar?"
-            android:textColor="@color/black"
-            android:textSize="20sp"/>
+            android:textSize="20dp"
+            android:textColor="@color/text_escuro"
+            />
+
         <ImageView android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -122,7 +124,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:text="Data"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/text_escuro"/>
 
             <TextView
                 android:id="@+id/txthora"
@@ -132,7 +135,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:text="Horário"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/text_escuro"/>
 
             <TextView
                 android:id="@+id/txtstatus_registro"
@@ -142,14 +146,15 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:text="Status"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/text_escuro"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txtstatus_registro"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="92dp"
+                android:layout_marginStart="75dp"
                 android:layout_marginBottom="10dp"
                 android:gravity="center"
                 android:paddingTop="15dp">
@@ -229,7 +234,8 @@
             android:layout_marginStart="23dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            android:text="@string/prece_cabelo" />
+            android:text="@string/prece_cabelo"
+            android:textColor="@color/text_escuro"/>
         <TextView
             android:id="@+id/textView3"
             style="@style/Text_raius"
@@ -240,7 +246,8 @@
             android:layout_marginStart="205dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="16dp"
-            android:text="Resolvo dep" />
+            android:text="Resolvo dep"
+            android:textColor="@color/text_escuro"/>
         <TextView
             android:id="@+id/textView4"
             style="@style/Text_raius"
@@ -249,7 +256,8 @@
             android:layout_marginLeft="150dp"
             android:layout_below="@+id/radioGroup"
             android:layout_marginTop="15dp"
-            android:text="@string/quimicos" />
+            android:text="@string/quimicos"
+            android:textColor="@color/text_escuro"/>
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="wrap_content"

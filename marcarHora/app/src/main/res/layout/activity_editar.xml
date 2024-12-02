@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#000000"
+        android:textColor="@color/text_escuro"
         android:textSize="18sp"
         tools:text="Corte" />
 
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#000000"
+        android:textColor="@color/text_escuro"
         android:textSize="18sp"
         tools:text="Barba" />
 
@@ -84,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#000000"
+        android:textColor="@color/text_escuro"
         android:textSize="18sp"
         tools:text="@string/sombrancelha" />
 
@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#000000"
+        android:textColor="@color/text_escuro"
         android:textSize="18sp"
         tools:text="@string/limpesa" />
 
@@ -120,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#000000"
+        android:textColor="@color/text_escuro"
         android:textSize="18sp"
         tools:text="@string/quimicos" />
 
@@ -141,7 +141,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#000000"
+        android:textColor="@color/text_escuro"
         android:textSize="18sp"
         tools:text="Data" />
 
@@ -158,7 +158,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#000000"
+        android:textColor="@color/text_escuro"
         android:textSize="18sp"
         tools:text="@string/hora" />
 

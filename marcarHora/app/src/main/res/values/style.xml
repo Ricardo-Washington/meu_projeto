@@ -13,7 +13,7 @@
     <style name="button_raius">
         <item name="fontFamily">@font/afacad</item>
         <item name="android:textSize">20dp</item>
-        <item name="android:textColor">#D03E3C3C</item>
+        <item name="android:textColor">@color/text_escuro</item>
     </style>
     <style name="textcinza">
         <item name="fontFamily">@font/afacad</item>
@@ -26,7 +26,6 @@
         <item name="fontFamily">@font/amita</item>
         <item name="android:textSize">22dp</item>
         <item name="android:color">@color/cinza_text</item>
-
     </style>
 
 </resources>

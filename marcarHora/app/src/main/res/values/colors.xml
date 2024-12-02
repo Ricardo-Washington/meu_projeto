@@ -8,4 +8,5 @@
     <color name="cinza_text">#494949</color>
     <color name="laranja_lixeira">#992400</color>
     <color name="amarelo_lixeira">#FF8300</color>
+    <color name="text_escuro">#D35D6868</color>
 </resources>
